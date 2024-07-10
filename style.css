@@ -3,7 +3,7 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-#heading {
+#heading { 
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -33,14 +33,29 @@ table td{
 
 }
 
-#btnX-O{
+#btns{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+  
 }
 
+#resetbtn{
+    height: 30px;
+    width: 70px;
+    font-size: 22px; 
+    border-radius: 5px;
+    padding: auto;    
+}
 
+.hoverable {
+    box-shadow: 5px 3px 1px ;    
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hoverable:hover {
+    background-color: lightblue;
+    color: white;
+}
 
  

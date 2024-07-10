@@ -61,3 +61,21 @@ function addText(id) {
         player = player === 'X' ? 'O' : 'X';
     }
 }
+
+
+//function of reset button.
+
+let rem = document.getElementById('resetbtn').addEventListener('click', resetFunc);
+console.log(rem);
+
+ function resetFunc(){
+   for(let i =0; i < 9; i++){
+    if(gameState[i] != ""){
+        document.getElementById(i).innerHTML = "";
+        
+    }
+}
+document.getElementById('winner').innerHTML = "";
+   flag  = false;
+   count = 0;
+ }
